@@ -20,9 +20,7 @@ public class Main {
         service.notifyAllObservers(sms);
 
         // Build a custom notification
-        Notification<String> custom = new NotificationBuilder<String>()
-                .setContent("Built from builder")
-                .build();
+        Notification<String> custom = new NotificationBuilder<String>().setContent("Built from builder").build();
         service.notifyAllObservers(custom);
     }
 }
